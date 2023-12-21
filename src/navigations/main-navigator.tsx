@@ -14,12 +14,13 @@ const MainNavigator = () => {
         component={HomeScreen}
         options={{
           tabBarShowLabel: false,
-          tabBarIcon: ({ focused }) =>
-            focused ? (
-              <FontAwesome name="home" size={24} color="black" />
-            ) : (
-              <FontAwesome name="home" size={24} color="lightgrey" />
-            ),
+          tabBarIcon: ({ focused }) => (
+            <FontAwesome
+              name="home"
+              size={24}
+              color={focused ? "black" : "lightgrey"}
+            />
+          ),
         }}
       />
       <Tab.Screen
@@ -27,12 +28,13 @@ const MainNavigator = () => {
         component={HistoryScreen}
         options={{
           tabBarShowLabel: false,
-          tabBarIcon: ({ focused }) =>
-            focused ? (
-              <FontAwesome name="list-ul" size={24} color="black" />
-            ) : (
-              <FontAwesome name="list-ul" size={24} color="lightgrey" />
-            ),
+          tabBarIcon: ({ focused }) => (
+            <FontAwesome
+              name="list-ul"
+              size={24}
+              color={focused ? "black" : "lightgrey"}
+            />
+          ),
         }}
       />
     </Tab.Navigator>

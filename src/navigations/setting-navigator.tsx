@@ -4,12 +4,7 @@ import SettingScreen from "../screens/Setting/Setting";
 const Stack = createNativeStackNavigator();
 const SettingNavigator = () => {
   return (
-    <Stack.Navigator
-      initialRouteName="Home"
-      screenOptions={{
-        contentStyle: { backgroundColor: "#fff" },
-      }}
-    >
+    <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Home" component={SettingScreen} />
     </Stack.Navigator>
   );
